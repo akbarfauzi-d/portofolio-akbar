@@ -5,139 +5,354 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Akbar Fauzi Digjaya | Portfolio</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
+
 <body>
 
-    <!-- HEADER -->
-    <header>
-        <nav>
-            <h2>Akbar.</h2>
+    <!-- ===================== -->
+    <!-- NAVBAR -->
+    <!-- ===================== -->
+    <header class="header">
+        <nav class="navbar">
 
-            <ul>
-                <li><a href="#about">Tentang</a></li>
-                <li><a href="#skills">Skill</a></li>
-                <li><a href="#projects">Proyek</a></li>
-                <li><a href="#certifications">Sertifikasi</a></li>
-                <li><a href="#contact">Kontak</a></li>
+            <div class="logo">
+                Akbar<span>.</span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
+
+            <button id="theme-toggle">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+
         </nav>
     </header>
 
-    <!-- HERO -->
-    <section id="hero">
-        <div class="hero-content">
-            <h1>Akbar Fauzi Digjaya</h1>
+    <!-- ===================== -->
+    <!-- HOME -->
+    <!-- ===================== -->
+    <section id="home" class="section hero">
 
-            <h3>Fresh Graduate SMK TKJ</h3>
+        <div class="hero-content">
+
+            <span class="badge">
+                Fresh Graduate SMK
+            </span>
+
+            <h1>
+                Halo, Saya <br>
+                <span>Akbar Fauzi Digjaya</span>
+            </h1>
 
             <p>
-                Memiliki minat pada bidang jaringan komputer,
-                IT Support, dan pengembangan web.
+                Web Developer • Networking • UI/UX Enthusiast
             </p>
 
             <div class="hero-buttons">
-                <a href="#" target="_blank">GitHub</a>
-                <a href="#contact">Hubungi Saya</a>
+                <a href="#projects" class="btn primary">
+                    View Projects
+                </a>
+
+                <a href="#contact" class="btn secondary">
+                    Contact Me
+                </a>
             </div>
+
         </div>
+
+        <div class="hero-image">
+            <img src="images/profil.jpg" alt="Akbar">
+        </div>
+
     </section>
 
+    <!-- ===================== -->
     <!-- ABOUT -->
-    <section id="about">
-        <h2>Tentang Saya</h2>
+    <!-- ===================== -->
+    <section id="about" class="section">
 
-        <p>
-            Lulusan SMK Teknik Komputer dan Jaringan yang memiliki
-            ketertarikan pada bidang jaringan komputer, IT Support,
-            dan web development. Memiliki pengalaman PKL di
-            PT Netkrom Solusindo serta semangat tinggi untuk
-            terus belajar dan berkembang.
-        </p>
+        <div class="section-title">
+            <h2>Tentang Saya</h2>
+        </div>
+
+        <div class="about-container">
+
+            <div class="about-text">
+
+                <p>
+                    Saya adalah mahasiswa Sistem Informasi yang memiliki
+                    minat pada pengembangan website, jaringan komputer,
+                    dan teknologi digital.
+                </p>
+
+                <p>
+                    Berpengalaman menggunakan HTML, CSS, JavaScript,
+                    GitHub, Mikrotik, serta memiliki kemampuan bekerja
+                    dalam tim maupun secara mandiri.
+                </p>
+
+                <div class="stats">
+
+                    <div class="stat-box">
+                        <h3>3+</h3>
+                        <p>Tahun Belajar</p>
+                    </div>
+
+                    <div class="stat-box">
+                        <h3>10+</h3>
+                        <p>Project</p>
+                    </div>
+
+                    <div class="stat-box">
+                        <h3>100%</h3>
+                        <p>Komitmen</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="about-image">
+                <img src="images/profil.jpg" alt="">
+            </div>
+
+        </div>
+
     </section>
 
+    <!-- ===================== -->
     <!-- SKILLS -->
-    <section id="skills">
-        <h2>Skills</h2>
+    <!-- ===================== -->
+    <section id="skills" class="section">
 
-        <div class="skills-container">
+        <div class="section-title">
+            <h2>Skills</h2>
+        </div>
 
-            <div class="skill-group">
-                <h3>Networking</h3>
+        <div class="skills-grid">
 
-                <ul>
-                    <li>Mikrotik Dasar</li>
-                    <li>Cisco Packet Tracer</li>
-                    <li>Debian</li>
-                    <li>Instalasi WiFi</li>
-                    <li>Troubleshooting</li>
-                </ul>
+            <div class="skill-item">
+                <div class="skill-header">
+                    <span>HTML</span>
+                    <span>100%</span>
+                </div>
+
+                <div class="skill-bar">
+                    <div class="skill-progress" data-width="100"></div>
+                </div>
             </div>
 
-            <div class="skill-group">
-                <h3>Web Development</h3>
+            <div class="skill-item">
+                <div class="skill-header">
+                    <span>CSS</span>
+                    <span>100%</span>
+                </div>
 
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>Git</li>
-                    <li>GitHub</li>
-                </ul>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-width="100"></div>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <div class="skill-header">
+                    <span>JavaScript</span>
+                    <span>100%</span>
+                </div>
+
+                <div class="skill-bar">
+                    <div class="skill-progress" data-width="100"></div>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <div class="skill-header">
+                    <span>Mikrotik</span>
+                    <span>100%</span>
+                </div>
+
+                <div class="skill-bar">
+                    <div class="skill-progress" data-width="100"></div>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <div class="skill-header">
+                    <span>Networking</span>
+                    <span>100%</span>
+                </div>
+
+                <div class="skill-bar">
+                    <div class="skill-progress" data-width="100"></div>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <div class="skill-header">
+                    <span>Git & GitHub</span>
+                    <span>100%</span>
+                </div>
+
+                <div class="skill-bar">
+                    <div class="skill-progress" data-width="100"></div>
+                </div>
             </div>
 
         </div>
+
     </section>
 
+    <!-- ===================== -->
+    <!-- EXPERIENCE -->
+    <!-- ===================== -->
+    <section id="experience" class="section">
+
+        <div class="section-title">
+            <h2>Experience</h2>
+        </div>
+
+        <div class="timeline">
+
+            <div class="timeline-item">
+                <h3>SMK Plus Pratama Adi</h3>
+                <span>2020 - 2023</span>
+
+                <p>
+                    Jurusan Teknik Komputer dan Jaringan.
+                </p>
+            </div>
+
+            <div class="timeline-item">
+                <h3>Universitas Republik Indonesia</h3>
+                <span>2023 - Sekarang</span>
+
+                <p>
+                    Program Studi Sistem Informasi.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ===================== -->
     <!-- PROJECTS -->
-    <section id="projects">
-        <h2>Proyek</h2>
+    <!-- ===================== -->
+    <section id="projects" class="section">
 
-        <div class="project-card">
+        <div class="section-title">
+            <h2>Projects</h2>
+        </div>
 
-            <h3>Birthday Nazla</h3>
+        <div class="project-grid">
 
-            <p>
-                Website ucapan ulang tahun interaktif dengan animasi,
-                musik, dan tampilan responsif.
-            </p>
+            <div class="project-card">
 
-            <div class="project-links">
-                <a href="#" target="_blank">Live Demo</a>
-                <a href="#" target="_blank">GitHub</a>
+                <h3>Portfolio Website</h3>
+
+                <p>
+                    Website portfolio pribadi menggunakan
+                    HTML, CSS, dan JavaScript.
+                </p>
+
+            </div>
+
+            <div class="project-card">
+
+                <h3>Birthday Website</h3>
+
+                <p>
+                    Website interaktif ulang tahun dengan
+                    animasi dan musik.
+                </p>
+
+            </div>
+
+            <div class="project-card">
+
+                <h3>Network Configuration</h3>
+
+                <p>
+                    Simulasi dan konfigurasi jaringan
+                    menggunakan Mikrotik.
+                </p>
+
             </div>
 
         </div>
+
     </section>
 
-    <!-- CERTIFICATIONS -->
-    <section id="certifications">
-        <h2>Sertifikasi</h2>
-
-        <ul>
-            <li>CSCU Training - PT Netkrom Solusindo (2024)</li>
-            <li>IoT Training - PT Telkom Indonesia (2025)</li>
-            <li>MTCNA Training - PT Netkrom Solusindo (2026)</li>
-        </ul>
-    </section>
-
+    <!-- ===================== -->
     <!-- CONTACT -->
-    <section id="contact">
-        <h2>Kontak</h2>
+    <!-- ===================== -->
+    <section id="contact" class="section">
 
-        <p>Email: akbarfauzid7@gmail.com</p>
-        <p>WhatsApp: 085177021391</p>
+        <div class="section-title">
+            <h2>Contact</h2>
+        </div>
 
-        <a href="https://github.com/akbarfauzi-d" target="_blank">
-            GitHub Profile
-        </a>
+        <div class="contact-container">
+
+            <div class="contact-info">
+
+                <div class="contact-card">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>akbarfauzid7@gmail.com</span>
+                </div>
+
+                <div class="contact-card">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <span>+62 851-7702-1391</span>
+                </div>
+
+                <div class="contact-card">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                </div>
+
+            </div>
+
+            <form class="contact-form">
+
+                <input
+                    type="text"
+                    placeholder="Nama Lengkap"
+                    required
+                >
+
+                <input
+                    type="email"
+                    placeholder="Email"
+                    required
+                >
+
+                <textarea
+                    placeholder="Pesan"
+                    rows="6"
+                ></textarea>
+
+                <button type="submit">
+                    Kirim Pesan
+                </button>
+
+            </form>
+
+        </div>
+
     </section>
 
-    <!-- FOOTER -->
-    <footer>
-        <p>&copy; 2026 Akbar Fauzi Digjaya. All Rights Reserved.</p>
-    </footer>
+    <script src="js/script.js"></script>
 
-    <script src="script.js"></script>
 </body>
 </html>
